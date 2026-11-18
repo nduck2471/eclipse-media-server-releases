@@ -1,5 +1,5 @@
 ﻿<div align="center">
-  <img src="assets/logo.svg" width="96" height="96" alt="Eclipse Media Server Logo" />
+  <img src="assets/logo.png" width="96" height="96" alt="Eclipse Media Server Logo" />
   <h1>Eclipse Media Server</h1>
   <p><strong>High-performance, private, zero-trust media server with native desktop apps, hardware transcoding, and progressive web streaming.</strong></p>
 
