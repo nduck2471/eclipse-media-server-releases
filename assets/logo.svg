@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient (Deep Obsidian Navy) -->
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="60%" stop-color="#070c18" />
+      <stop offset="100%" stop-color="#020617" />
+    </radialGradient>
+
+    <!-- Outer Solar Flare Corona Glow -->
+    <radialGradient id="coronaGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="55%" stop-color="#fbbf24" stop-opacity="0.38" />
+      <stop offset="78%" stop-color="#f59e0b" stop-opacity="0.16" />
+      <stop offset="100%" stop-color="#d97706" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Corona Ring Gradient -->
+    <linearGradient id="coronaRing" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d97706" />
+      <stop offset="35%" stop-color="#f59e0b" />
+      <stop offset="75%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#fef08a" />
+    </linearGradient>
+
+    <!-- Diamond Flare Radial Gradient -->
+    <radialGradient id="flareGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="25%" stop-color="#fef08a" stop-opacity="0.92" />
+      <stop offset="55%" stop-color="#f59e0b" stop-opacity="0.45" />
+      <stop offset="100%" stop-color="#d97706" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Moon Body Radial Gradient with subtle rim shadow -->
+    <radialGradient id="moonGrad" cx="38%" cy="38%" r="62%">
+      <stop offset="0%" stop-color="#0a0f1d" />
+      <stop offset="80%" stop-color="#030712" />
+      <stop offset="100%" stop-color="#020617" />
+    </radialGradient>
+
+    <!-- Glow filters -->
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="7" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="intenseGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="15" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Nền bo góc Squircle Pro -->
+  <rect width="512" height="512" rx="116" fill="url(#bgGrad)" stroke="#1e293b" stroke-width="5" />
+
+  <!-- Quầng sáng nhật thực lan tỏa -->
+  <circle cx="256" cy="256" r="212" fill="url(#coronaGlow)" />
+
+  <!-- Vành sóng hạt năng lượng -->
+  <circle cx="256" cy="256" r="186" fill="none" stroke="#f59e0b" stroke-width="3" stroke-opacity="0.32" stroke-dasharray="14 8" />
+  <circle cx="256" cy="256" r="172" fill="none" stroke="#fbbf24" stroke-width="4.5" stroke-opacity="0.48" filter="url(#softGlow)" />
+
+  <!-- Vành nhật thực chính (Golden Corona Ring) -->
+  <circle cx="256" cy="256" r="158" fill="none" stroke="url(#coronaRing)" stroke-width="8.5" filter="url(#softGlow)" />
+  <circle cx="256" cy="256" r="158" fill="none" stroke="#fffbeb" stroke-width="2.5" stroke-opacity="0.8" />
+
+  <!-- Đĩa mặt trăng che khuất (Dark Moon) -->
+  <circle cx="256" cy="256" r="152" fill="url(#moonGrad)" />
+
+  <!-- Điểm kim cương lóa sáng cực điểm (Diamond Ring Flare) -->
+  <g transform="translate(368, 144)">
+    <!-- Quầng hào quang tròn -->
+    <circle cx="0" cy="0" r="58" fill="url(#flareGlow)" filter="url(#intenseGlow)" />
+
+    <!-- Tia sáng chữ thập chính (Cross Spikes) -->
+    <polygon points="0,-76 3.5,-12 76,0 3.5,12 0,76 -3.5,12 -76,0 -3.5,-12" fill="#ffffff" opacity="0.95" filter="url(#softGlow)" />
+
+    <!-- Tia sáng chéo 45 độ (Diagonal Spikes) -->
+    <polygon points="-40,-40 -6,-10 -10,-6 0,0 -6,-10 -10,-6 -40,-40" fill="#fef08a" opacity="0.75" />
+    <polygon points="40,40 6,10 10,6 0,0 6,10 10,6 40,40" fill="#fef08a" opacity="0.75" />
+    <polygon points="40,-40 6,-10 10,-6 0,0 6,-10 10,-6 40,-40" fill="#fef08a" opacity="0.75" />
+    <polygon points="-40,40 -6,10 -10,6 0,0 -6,10 -10,6 -40,40" fill="#fef08a" opacity="0.75" />
+
+    <!-- Lõi kim cương trắng tinh khiết -->
+    <circle cx="0" cy="0" r="15" fill="#ffffff" filter="url(#softGlow)" />
+    <circle cx="0" cy="0" r="8" fill="#ffffff" />
+  </g>
+
+  <!-- Hạt ánh sáng phụ (Baily's Beads) -->
+  <circle cx="338" cy="182" r="4" fill="#fef08a" opacity="0.85" />
+  <circle cx="390" cy="182" r="2.8" fill="#fef08a" opacity="0.65" />
+</svg>
