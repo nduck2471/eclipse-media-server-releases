@@ -66,7 +66,7 @@ shasum -a 256 EclipseMediaServer-macOS-arm64-v2.0.0.dmg
 
 | Package | SHA-256 Checksum |
 | :--- | :--- |
-| `EclipseMediaServer-Setup-v2.0.0.exe` | `0c78ae2f1c5aa7a85b0b6f3ed3ba4b0be4380a7aea3a9b06b5209d94f2bf2e3d` |
+| `EclipseMediaServer-Setup-v2.0.0.exe` | `03fbb955b670002a67b290a954b69efe7df4a2990544954e66ae8a24de46af4c` |
 | `EclipseMediaServer-macOS-arm64-v2.0.0.dmg` | `e539f66877b7495bd59879f5eac002c8330229d677ecfab999e3aa03f158b1ce` |
 | `EclipseMediaServer-macOS-amd64-v2.0.0.dmg` | `0514474dbe2e7e41361372b6ceb42e4874470ae12309263162fa0e931c050198` |
 
